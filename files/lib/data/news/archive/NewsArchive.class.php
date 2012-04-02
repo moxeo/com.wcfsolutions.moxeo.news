@@ -68,6 +68,7 @@ class NewsArchive extends DatabaseObject {
 	 */
 	public static function getNewsArchives() {
 		if (self::$newsArchives === null) {
+			WCF::getCache()->addResource('newsArchive', MOXEO_DIR.'cache/cache.newsArchive.php', MOXEO_DIR.'lib/system/cache/CacheBuilderNewsArchive.class.php');
 			self::$newsArchives = WCF::getCache()->get('newsArchive');
 		}
 
