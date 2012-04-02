@@ -19,6 +19,7 @@
 		<item name="wcf.acp.group.option.category.admin.moxeo.news.description"><![CDATA[]]></item>
 	</category>
 	<category name="wcf.theme">
+		<item name="wcf.theme.module.type.category.news"><![CDATA[Nachrichten]]></item>
 		<item name="wcf.theme.module.type.newsItem"><![CDATA[Nachrichtenanzeige]]></item>
 		<item name="wcf.theme.module.type.newsItemList"><![CDATA[Nachrichtenauflistung]]></item>
 	</category>
