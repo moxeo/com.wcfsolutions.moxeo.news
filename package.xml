@@ -23,6 +23,7 @@
 		<templates>templates.tar</templates>
 		<acptemplates>acptemplates.tar</acptemplates>
 		<sql>install.sql</sql>
+		<script>acp/install_news.php</script>
 
 		<!-- config -->
 		<groupoptions>groupoptions.xml</groupoptions>
