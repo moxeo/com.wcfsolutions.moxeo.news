@@ -27,6 +27,7 @@
 		<!-- config -->
 		<groupoptions>groupoptions.xml</groupoptions>
 		<acpmenu>acpmenu.xml</acpmenu>
+		<eventlistener>eventlistener.xml</eventlistener>
 		<thememoduletype>thememoduletype.xml</thememoduletype>
 		<commentableobjecttype>commentableobjecttype.xml</commentableobjecttype>
 
