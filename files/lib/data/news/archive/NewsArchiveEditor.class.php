@@ -77,6 +77,7 @@ class NewsArchiveEditor extends NewsArchive {
 	 * Resets the news archive cache.
 	 */
 	public static function resetCache() {
+		WCF::getCache()->addResource('newsArchive', MOXEO_DIR.'cache/cache.newsArchive.php', MOXEO_DIR.'lib/system/cache/CacheBuilderNewsArchive.class.php');
 		WCF::getCache()->clearResource('newsArchive');
 	}
 }
