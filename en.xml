@@ -89,7 +89,7 @@
 		<item name="moxeo.acp.news.item.title"><![CDATA[Title]]></item>
 		<item name="moxeo.acp.news.item.title.description"><![CDATA[Enter the title of the news here.]]></item>
 		<item name="moxeo.acp.news.item.username"><![CDATA[Username]]></item>
-		<item name="moxeo.acp.news.item.username.description"><![CDATA[Enter the name of the user who is the author of the news.]]></item>
+		<item name="moxeo.acp.news.item.username.description"><![CDATA[Enter the name of the user here who is the author of the news.]]></item>
 		<item name="moxeo.acp.news.item.view"><![CDATA[News]]></item>
 		<item name="moxeo.acp.news.item.view.count"><![CDATA[There is a total of {#$items} news]]></item>
 		<item name="moxeo.acp.news.item.view.count.noNewsArchives"><![CDATA[Currently there are no archives available to which news could be added.]]></item>
