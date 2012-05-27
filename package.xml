@@ -4,8 +4,8 @@
 		<packagename>News System</packagename>
 		<packagename language="de">Nachrichten-System</packagename>
 		<packagedescription language="de">Erweitert Moxeo Open Source CMS um ein Nachrichten-System.</packagedescription>
-		<version>1.0.0 RC 1</version>
-		<date>2012-04-02</date>
+		<version>1.0.0 RC 2</version>
+		<date>2012-05-27</date>
 		<plugin>com.wcfsolutions.moxeo</plugin>
 	</packageinformation>
 
@@ -16,7 +16,7 @@
 
 	<requiredpackages>
 		<requiredpackage minversion="1.1.4 Beta 1">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="1.0.0 RC 1">com.wcfsolutions.moxeo</requiredpackage>
+		<requiredpackage minversion="1.0.0 RC 2">com.wcfsolutions.moxeo</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
@@ -36,6 +36,14 @@
 
 		<!-- languages -->
 		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.0 RC 1">
+		<!-- files -->
+		<files>files.tar</files>
+
+		<!-- languages -->
 		<languages languagecode="en">en.xml</languages>
 	</instructions>
 </package>
