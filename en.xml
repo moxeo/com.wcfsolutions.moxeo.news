@@ -35,7 +35,7 @@
 		<item name="moxeo.acp.news.archive.add"><![CDATA[Add archive]]></item>
 		<item name="moxeo.acp.news.archive.add.success"><![CDATA[The archive was added successfully.]]></item>
 		<item name="moxeo.acp.news.archive.contentItemID"><![CDATA[Page]]></item>
-		<item name="moxeo.acp.news.archive.contentItemID.description"><![CDATA[Choose the page on which the news should be displayed. The chosen page must contain the module &raquo;News view&laquo;]]></item>
+		<item name="moxeo.acp.news.archive.contentItemID.description"><![CDATA[Choose the page on which the news should be displayed. The chosen page must contain the module &raquo;News view&laquo;.]]></item>
 		<item name="moxeo.acp.news.archive.data"><![CDATA[Data]]></item>
 		<item name="moxeo.acp.news.archive.delete"><![CDATA[Delete archive]]></item>
 		<item name="moxeo.acp.news.archive.delete.success"><![CDATA[The archive was deleted successfully.]]></item>
