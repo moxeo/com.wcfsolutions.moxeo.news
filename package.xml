@@ -3,6 +3,7 @@
 	<packageinformation>
 		<packagename>News System</packagename>
 		<packagename language="de">Nachrichten-System</packagename>
+		<packagedescription>Extends Moxeo Open Source CMS by a news system.</packagedescription>
 		<packagedescription language="de">Erweitert Moxeo Open Source CMS um ein Nachrichten-System.</packagedescription>
 		<version>1.0.0 RC 2</version>
 		<date>2012-05-29</date>
