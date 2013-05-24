@@ -2,7 +2,7 @@
 
 <div class="newsItem">
 	<p class="author">{$newsItem->username} ({@$newsItem->time|time})</p>
-	<p class="text">{if $themeModule->displayType == 'full'}{@$newsItem->text}{else}{@$newsItem->teaser}{/if}</p>
+	<div class="text">{if $themeModule->displayType == 'full'}{@$newsItem->text}{else}{@$newsItem->teaser}{/if}</div>
 </div>
 
 {pages print=true assign=pagesOutput link=$newsItem->getURL()|concat:'?pageNo=%d':SID_ARG_2ND_NOT_ENCODED}
