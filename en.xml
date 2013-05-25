@@ -20,6 +20,7 @@
 	</category>
 	<category name="wcf.theme">
 		<item name="wcf.theme.module.type.category.news"><![CDATA[News]]></item>
+		<item name="wcf.theme.module.type.news"><![CDATA[News (list and view)]]></item>
 		<item name="wcf.theme.module.type.newsItem"><![CDATA[News view]]></item>
 		<item name="wcf.theme.module.type.newsItemList"><![CDATA[News list]]></item>
 	</category>
@@ -112,6 +113,11 @@
 		<item name="moxeo.acp.theme.module.newsItemList.newsArchiveIDs.description"><![CDATA[The news from which archives should be displayed in the news list?]]></item>
 		<item name="moxeo.acp.theme.module.newsItemList.newsItemsPerPage"><![CDATA[News per page]]></item>
 		<item name="moxeo.acp.theme.module.newsItemList.newsItemsPerPage.description"><![CDATA[Enther the number of news per page here.]]></item>
+		<item name="moxeo.acp.theme.module.news.data"><![CDATA[Data]]></item>
+		<item name="moxeo.acp.theme.module.news.newsArchiveIDs"><![CDATA[Archives]]></item>
+		<item name="moxeo.acp.theme.module.news.newsArchiveIDs.description"><![CDATA[The news from which archives should be displayed in the news list?]]></item>
+		<item name="moxeo.acp.theme.module.news.newsItemsPerPage"><![CDATA[News per page]]></item>
+		<item name="moxeo.acp.theme.module.news.newsItemsPerPage.description"><![CDATA[Enther the number of news per page here.]]></item>
 	</category>
 	<category name="moxeo.comment">
 		<item name="moxeo.comment.commentableObjectType.newsItem"><![CDATA[News]]></item>

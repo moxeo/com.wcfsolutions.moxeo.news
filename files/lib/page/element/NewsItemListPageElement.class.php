@@ -40,18 +40,18 @@ class NewsItemListPageElement extends ThemeModulePageElement {
 	public function readParameters() {
 		parent::readParameters();
 
-		// init news item list
-		$this->newsItemList = new NewsItemList();
-		$this->newsItemList->sqlConditions = "	news_item.newsArchiveID IN (".implode(',', $this->themeModule->newsArchiveIDs).")
-							AND news_item.enabled = 1
-							AND (news_item.publishingStartTime = 0 OR news_item.publishingStartTime > ".TIME_NOW.")
-							AND (news_item.publishingEndTime = 0 OR news_item.publishingStartTime <= ".TIME_NOW.")";
-
 		// get content item
 		if (!isset($this->additionalData['contentItem'])) {
 			throw new SystemException('no content item given');
 		}
 		$this->contentItem = $this->additionalData['contentItem'];
+
+		// init news item list
+		$this->newsItemList = new NewsItemList();
+		$this->newsItemList->sqlConditions = "	news_item.newsArchiveID IN (".implode(',', $this->themeModule->newsArchiveIDs).")
+							AND news_item.enabled = 1
+							AND (news_item.publishingStartTime = 0 OR news_item.publishingStartTime > ".TIME_NOW.")
+							AND (news_item.publishingEndTime = 0 OR news_item.publishingEndTime <= ".TIME_NOW.")";
 
 		// news items per page
 		if ($this->themeModule->newsItemsPerPage) $this->itemsPerPage = $this->themeModule->newsItemsPerPage;

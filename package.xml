@@ -5,8 +5,8 @@
 		<packagename language="de">Nachrichten-System</packagename>
 		<packagedescription>Extends Moxeo Open Source CMS by a news system.</packagedescription>
 		<packagedescription language="de">Erweitert Moxeo Open Source CMS um ein Nachrichten-System.</packagedescription>
-		<version>1.1.0 Alpha 1</version>
-		<date>2013-05-24</date>
+		<version>1.1.0 Alpha 2</version>
+		<date>2013-05-25</date>
 		<plugin>com.wcfsolutions.moxeo</plugin>
 	</packageinformation>
 
@@ -42,6 +42,15 @@
 
 	<instructions type="update" fromversion="1.0.0 RC 2">
 		<!-- files -->
+		<files>files.tar</files>
 		<templates>templates.tar</templates>
+		<acptemplates>acptemplates.tar</acptemplates>
+
+		<!-- config -->
+		<thememoduletype>thememoduletype.xml</thememoduletype>
+
+		<!-- languages -->
+		<languages languagecode="de">de.xml</languages>
+		<languages languagecode="en">en.xml</languages>
 	</instructions>
 </package>
