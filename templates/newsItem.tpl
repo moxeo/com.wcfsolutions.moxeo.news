@@ -9,7 +9,7 @@
 
 {if $newsItem->enableComments}
 	{if $comments|count}
-		<h2>{lang}moxeo.comment.comments{/lang}</h2>
+		<h3>{lang}moxeo.comment.comments{/lang}</h3>
 
 		<ul class="comments">
 			{cycle name='commentsCycle' values='even,odd' reset=true print=false advance=false}

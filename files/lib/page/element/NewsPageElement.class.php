@@ -18,7 +18,7 @@ require_once(WCF_DIR.'lib/page/element/ThemeModulePageElement.class.php');
  */
 class NewsPageElement extends ThemeModulePageElement {
 	// system
-	public $templateName = 'newsItemList';
+	public $templateName = 'news';
 
 	/**
 	 * news item list object
@@ -121,7 +121,11 @@ class NewsPageElement extends ThemeModulePageElement {
 		if ($this->newsItemList !== null) {
 			return $this->newsItemList->countObjects();
 		}
-		return $this->commentList->countObjects();
+		else if ($this->commentList !== null) {
+			return $this->commentList->countObjects();
+		}
+
+		return 0;
 	}
 
 	/**
@@ -135,7 +139,8 @@ class NewsPageElement extends ThemeModulePageElement {
 			$this->newsItemList->sqlOffset = ($this->pageNo - 1) * $this->itemsPerPage;
 			$this->newsItemList->sqlLimit = $this->itemsPerPage;
 			$this->newsItemList->readObjects();
-		else {
+		}
+		else if ($this->commentList !== null) {
 			// read comments
 			$this->commentList->sqlOffset = ($this->pageNo - 1) * $this->itemsPerPage;
 			$this->commentList->sqlLimit = $this->itemsPerPage;
@@ -164,6 +169,24 @@ class NewsPageElement extends ThemeModulePageElement {
 			'comments' => ($this->commentList !== null ? $this->commentList->getObjects() : array()),
 			'commentForm' => ($this->commentList !== null ? $commentAddForm->getContent() : '')
 		));
+	}
+
+	/**
+	 * @see	Page::show()
+	 */
+	public function show() {
+		if ($this->newsItem) {
+			// set custom page title
+			ContentItemPage::setCustomPageTitle($this->newsItem->title);
+
+			// set custom meta description
+			ContentItemPage::setCustomMetaDescription($this->newsItem->teaser);
+
+			// set custom meta keywords
+			ContentItemPage::setCustomMetaKeywords($this->newsItem->title);
+		}
+
+		parent::show();
 	}
 }
 ?>
